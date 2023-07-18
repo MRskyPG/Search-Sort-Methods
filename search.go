@@ -16,3 +16,15 @@ func BinarySearch(arr []int, elem int) int {
 	}
 	return -1
 }
+
+func LinearSearch(arr []int, elem int) int {
+	fst := 0
+	lst := len(arr)
+	for fst < lst {
+		if arr[fst] == elem {
+			return fst
+		}
+		fst++
+	}
+	return -1
+}
